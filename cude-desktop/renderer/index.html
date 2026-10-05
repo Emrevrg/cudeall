@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; img-src 'self' data:; font-src 'self' data: https://cdn.jsdelivr.net; connect-src 'self' https://cdn.jsdelivr.net">
+<title>Cude Desktop</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="titlebar">
+  <div class="tb-left"><span class="tb-logo">C</span></div>
+  <div id="tabs"></div>
+  <button id="tabAdd" title="Yeni oturum">+</button>
+  <div class="tb-right">
+    <button id="btnMin">–</button><button id="btnMax">▢</button><button id="btnClose">✕</button>
+  </div>
+</div>
+<div id="body">
+  <div id="sidebar">
+    <button data-mode="chat" class="active">💬 Sohbet</button>
+    <button data-mode="ide">🧩 IDE</button>
+    <button data-mode="agent">🤖 Ajan</button>
+    <button data-mode="computer">🖥️ Bilgisayar</button>
+    <div class="sp"></div>
+    <button data-mode="settings">⚙️ Ayarlar</button>
+  </div>
+  <div id="main">
+    <section id="view-chat" class="view active">
+      <div id="workspaceBar"><button id="workspacePick">Proje klasoru sec</button><span id="workspacePath">Proje secilmedi; baglam eklenmiyor. Secilen proje ozeti aktif saglayiciya gonderilir.</span></div>
+      <div id="chatLog"></div>
+      <div id="chatBar"><button id="chatFile" title="Dosya çevir (MarkItDown)">📎</button><input id="chatIn" placeholder="Yaz... /project /spine status|capabilities|context|handoffs /evidence &lt;ne doğrulandı&gt; /task start|list|update|plan|decision|handoff|complete /status /continue /test /review /search"><button id="chatGo">↑</button></div>
+    </section>
+    <section id="view-ide" class="view">
+      <div id="ideBar"><button id="ideOpen">Dosya aç</button><button id="ideSave">Kaydet</button><span id="idePath">—</span></div>
+      <div id="editor"></div>
+      <div id="termWrap"><div id="termHead">Kabuk <span id="termCwd"></span></div><div id="term"></div><div id="termBar"><input id="termIn" placeholder="komut + Enter"><button id="termGo">Çalıştır</button></div></div>
+    </section>
+    <section id="view-agent" class="view">
+      <div id="agentLog"></div>
+      <div id="agentBar"><input id="agentIn" placeholder="Görev ver (araclarla koşar, adımları gösterir)"><button id="agentGo">▶</button></div>
+    </section>
+    <section id="view-computer" class="view">
+      <div id="compBar"><button id="compShot">Ekran görüntüsü</button><span id="compHint">Önce görüntü al, koordinatı gör, sonra tıkla (güvenlik kuralı).</span></div>
+      <img id="compImg" alt="">
+      <div id="compForm"><input id="cx" placeholder="x"><input id="cy" placeholder="y"><input id="ctext" placeholder="yazılacak metin (opsiyonel)"><button id="compClick">Tıkla</button><button id="compType">Yaz</button></div>
+    </section>
+    <section id="view-settings" class="view">
+      <h3>Ayarlar (her şey senin elinde)</h3>
+      <label>Sağlayıcı <select id="setProvider"><option>openrouter</option><option>openai</option><option>deepseek</option><option>groq</option><option>cerebras</option><option>mistral</option><option>gemini</option><option>anthropic</option></select></label>
+      <label>Model <input id="setModel" placeholder="or: openai/gpt-4o-mini (boşsa sağlayıcı varsayılanı)"></label>
+      <label><input type="checkbox" id="setAuto"> Mod değişimini otomatik onayla (önerilir: kapalı)</label>
+      <label><input type="checkbox" id="setTray" checked> Kapatınca tepsiye in (görev çubuğunda dursun)</label>
+      <button id="setSave">Kaydet</button>
+      <p class="hint">API anahtarı buraya YAZILMAZ — kasaya terminalden eklenir: CudeAll'de <code>cude_provider(action=add)</code>. Bağlılar: <span id="provList"></span></p>
+      <div id="mcpStat">MCP: kontrol ediliyor…</div>
+    </section>
+  </div>
+</div>
+<div id="routerModal" class="hidden">
+  <div class="box"><h4 id="rmTitle">Mod önerisi</h4><p id="rmWhy"></p>
+  <div><button id="rmYes">Geç</button><button id="rmNo">Kal</button></div></div>
+</div>
+<div id="statusbar"><span id="stMode">chat</span><span id="stMsg">hazır</span></div>
+<script src="app.js"></script>
+</body>
+</html>

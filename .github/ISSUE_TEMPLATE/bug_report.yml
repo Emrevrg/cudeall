@@ -1,0 +1,41 @@
+name: Bug report
+description: Report a reproducible problem in CudeAll
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Share only sanitized logs. Never include API keys, browser cookies, or private project data.
+  - type: input
+    id: version
+    attributes:
+      label: CudeAll version
+      placeholder: e.g. 0.4.0
+    validations:
+      required: true
+  - type: input
+    id: host
+    attributes:
+      label: Host and version
+      placeholder: OpenCode, Codex, Claude Code, or Cude Desktop
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Include the tool/action name and a minimal example.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Sanitized logs
+      description: Remove tokens, personal paths, browser data, and private source text.
+    validations:
+      required: false

@@ -1,0 +1,51 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "anthropic/claude-sonnet-4-5",
+  "small_model": "anthropic/claude-haiku-4-5",
+  // CudeAll: ortak omurga (tek proje baglami, kalici gorev/kanit, arac kesfi, handoff)
+  // + web, tarayici, bilgisayar, hafiza ve ajan akislari —
+  // tek MCP (14 arac) + tek plugin + tek skill + 12 komut.
+  // Okuma araclari acik; yerel degisiklik, uygulama kontrolu ve dis etki icin onay gerekir.
+  "mcp": {
+    "cudeall": {
+      "type": "local",
+      "command": ["node", "mcp-cudeall/server.mjs"],
+      "enabled": true,
+      "timeout": 30000
+    },
+    // Yedekler kapali durur, gerektikce acilir:
+    "playwright": {
+      "type": "local",
+      "command": ["npx", "-y", "@playwright/mcp@latest"],
+      "enabled": false,
+      "timeout": 10000
+    },
+    "context7": {
+      "type": "remote",
+      "url": "https://mcp.context7.com/mcp",
+      "enabled": false
+    }
+  },
+  "instructions": [".opencode/skills/cudeall/SKILL.md"],
+  "permission": {
+    // Salt-okunur web arama acik; degisiklik ve uygulama kontrolu onayli.
+    "skill": { "cudeall": "allow" },
+    "cude_web_search": "allow",
+    "cude_web_fetch": "allow",
+    "cude_project": "allow",
+    "cude_spine": "ask",
+    "cude_task": "ask",
+    "cude_browser": "ask",
+    "cude_computer": "ask",
+    "cude_memory": "ask",
+    "cude_automation": "ask",
+    "cude_history": "ask",
+    "cude_setup": "ask",
+    "cude_orchestrate": "ask",
+    "cude_qa": "ask",
+    "cude_provider": "ask",
+    "bash": {
+      "rm -rf *": "deny"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+const fs = require("fs");
+const s = fs.readFileSync("mcp-cudeall/server.mjs", "utf8");
+console.log("SERVERINFO:", (s.match(/serverInfo:\s*\{[^}]+\}/) || ["yok"])[0]);
+const p = JSON.parse(fs.readFileSync("mcp-cudeall/package.json", "utf8"));
+console.log("PKG:", p.name, p.version, "|", p.description);
+console.log("VERSION-const:", (s.match(/const VERSION = "([^"]+)"/) || [])[1]);
+const m = JSON.parse(fs.readFileSync("chrome-extension/manifest.json", "utf8"));
+console.log("EXT:", m.name, m.version);
+const b = fs.readFileSync("chrome-extension/background.js", "utf8");
+console.log("GROUP:", (b.match(/DEFAULT_GROUP = "([^"]+)"/) || [])[1]);
+const ph = fs.readFileSync("chrome-extension/popup.html", "utf8");
+console.log("POPUP-H3:", (ph.match(/<h3>([^<]+)/) || [])[1]);
+const sk = fs.readFileSync(".opencode/skills/cudeall/SKILL.md", "utf8").split("\n").slice(0, 3).join(" | ");
+console.log("SKILL:", sk.slice(0, 220));
+const pl = fs.readFileSync(".opencode/plugins/cudeall.js", "utf8");
+console.log("PLUGIN-EXPORT:", (pl.match(/export const (\w+)/) || [])[1]);

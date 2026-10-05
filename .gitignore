@@ -1,0 +1,29 @@
+# Dependencies and generated builds
+**/node_modules/
+**/dist/
+**/build/
+**/coverage/
+**/.cache/
+*.log
+npm-debug.log*
+
+# Local credentials and provider configuration
+.env
+.env.*
+!.env.example
+.opencode/providers.json
+
+# Per-machine CudeAll state (tasks, evidence, context, automation data)
+.opencode/cudeall/
+.opencode/orchestrator/
+.opencode/cudeall-memory.json
+.opencode/cudeall-goal.md
+.opencode/search-cache.json
+.opencode/qa/
+
+# Desktop and operating-system output
+cude-desktop/out/
+opus-5.5-benchmarks/
+.DS_Store
+Thumbs.db
+Desktop.ini

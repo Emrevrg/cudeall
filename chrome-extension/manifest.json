@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "opencode-all",
+  "version": "0.2.0",
+  "description": "cudeall MCP koprusu: sekme gruplarini acar, sayfa okur, tiklar/yazar. Tum isler 'CudeAll' grubunda toplanir.",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAodlyEJ8You7eUbJWXQzniIlX/SwlINfox1pXwi83HWyS1VrUq+t1ayYU+pHjA0dM+Cq2sgjJrQQzh6bGjxDMl0I7jg8ttM7rxJ5p1OzGxRa4UobnBkKGhyZh+3Ywq5HOoy52eWtTgbMqu0RLMHak39/cyZv1CWgZeUM6udFXCSejEOQ2iiZzrjq6IsG2e54LHY4rR1KL4R+6wHnAEKvfFg4M7zmjgBdGCt/OKjsX9BIXGYjE2Az+mcA5Lmjh0qagIeLIvyC0XHlmwD3WKfqqSIAIjUEg9+kdn2XR6EGJB6BtUimzufSO0B8rXrUmGbMnaEmaRBJ9eyyaIrkL2k0V5QIDAQAB",
+  "permissions": ["tabs", "tabGroups", "scripting", "storage", "activeTab"],
+  "host_permissions": ["http://*/*", "https://*/*", "http://127.0.0.1/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "cudeall"
+  }
+}

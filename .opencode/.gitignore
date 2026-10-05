@@ -1,0 +1,13 @@
+node_modules
+bun.lock
+providers.json
+load-providers.ps1
+cudeall-memory.json
+cudeall-goal.md
+search-cache.json
+qa/
+cudeall/tasks/
+cudeall/evidence.jsonl
+cudeall/context.md
+cudeall/automations/
+cudeall/adapters.json

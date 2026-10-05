@@ -1,0 +1,19 @@
+{
+  "name": "cude-desktop",
+  "version": "0.1.0",
+  "description": "Cude Desktop — sohbet + IDE + ajan + computer-use tek cati (CudeAll gomulu). MIT.",
+  "license": "MIT",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "smoke": "electron . --cude-smoke"
+  },
+  "devDependencies": {
+    "electron": "^33.0.0"
+  },
+  "dependencies": {
+    "monaco-editor": "^0.52.0",
+    "@xterm/xterm": "^5.5.0",
+    "@xterm/addon-fit": "^0.10.0"
+  }
+}

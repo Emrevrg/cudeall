@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-labelledby="title desc">
+  <title id="title">CudeAll — one durable workflow for coding agents</title>
+  <desc id="desc">A luminous project spine connects coding agents, tools, and persistent work records.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#07111d"/><stop offset=".58" stop-color="#0b1827"/><stop offset="1" stop-color="#101d2a"/></linearGradient>
+    <linearGradient id="beam" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#34d399"/><stop offset=".55" stop-color="#5eead4"/><stop offset="1" stop-color="#93c5fd"/></linearGradient>
+    <radialGradient id="glow"><stop stop-color="#34d399" stop-opacity=".24"/><stop offset="1" stop-color="#34d399" stop-opacity="0"/></radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#94a3b8" stroke-opacity=".055" stroke-width="1"/></pattern>
+    <filter id="soft"><feGaussianBlur stdDeviation="16"/></filter>
+  </defs>
+  <rect width="1280" height="640" rx="28" fill="url(#bg)"/>
+  <rect width="1280" height="640" rx="28" fill="url(#grid)"/>
+  <circle cx="1000" cy="335" r="260" fill="url(#glow)" filter="url(#soft)"/>
+  <path d="M770 560V375M770 375L650 280M770 375L890 280M770 375V205M650 280L565 210M650 280L680 185M890 280L870 180M890 280L1000 210M770 205L735 130M770 205L820 120" fill="none" stroke="url(#beam)" stroke-opacity=".72" stroke-width="3"/>
+  <g fill="#0c1b29" stroke="#5eead4" stroke-width="2">
+    <circle cx="770" cy="375" r="34"/><circle cx="650" cy="280" r="24"/><circle cx="890" cy="280" r="24"/><circle cx="770" cy="205" r="24"/>
+    <circle cx="565" cy="210" r="16"/><circle cx="680" cy="185" r="16"/><circle cx="870" cy="180" r="16"/><circle cx="1000" cy="210" r="16"/><circle cx="735" cy="130" r="16"/><circle cx="820" cy="120" r="16"/>
+  </g>
+  <g fill="#a7f3d0" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" text-anchor="middle">
+    <text x="770" y="379">SPINE</text><text x="650" y="284">TASKS</text><text x="890" y="284">PROOF</text><text x="770" y="209">CONTEXT</text>
+  </g>
+  <g fill="#bfd0df" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="600">
+    <text x="520" y="194">OpenCode</text><text x="647" y="163">Codex</text><text x="841" y="157">Claude</text><text x="1009" y="199">Desktop</text><text x="686" y="107">Tools</text><text x="827" y="96">Agents</text>
+  </g>
+  <g transform="translate(76 86)">
+    <rect width="132" height="30" rx="15" fill="#10291f" stroke="#2b775b"/>
+    <circle cx="16" cy="15" r="4" fill="#5eead4"/>
+    <text x="29" y="20" fill="#a7f3d0" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1.2">LOCAL-FIRST</text>
+  </g>
+  <text x="76" y="227" fill="#f1f5f9" font-family="Segoe UI, Arial, sans-serif" font-size="78" font-weight="750" letter-spacing="-3">Cude<tspan fill="#5eead4">All</tspan></text>
+  <text x="80" y="278" fill="#d4e1eb" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="500">One durable workflow for coding agents.</text>
+  <text x="80" y="319" fill="#8fa4b8" font-family="Segoe UI, Arial, sans-serif" font-size="17">Shared context. Verifiable work. Seamless handoffs.</text>
+  <g transform="translate(80 370)" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="650">
+    <g><rect width="122" height="36" rx="18" fill="#122436" stroke="#253b4f"/><text x="61" y="23" fill="#d9e7f2" text-anchor="middle">14 MCP tools</text></g>
+    <g transform="translate(134)"><rect width="128" height="36" rx="18" fill="#122436" stroke="#253b4f"/><text x="64" y="23" fill="#d9e7f2" text-anchor="middle">4 agent hosts</text></g>
+    <g transform="translate(274)"><rect width="150" height="36" rx="18" fill="#122436" stroke="#253b4f"/><text x="75" y="23" fill="#d9e7f2" text-anchor="middle">Local-first core</text></g>
+  </g>
+  <path d="M80 466H470" stroke="#203447"/>
+  <text x="80" y="504" fill="#6f879c" font-family="Segoe UI, Arial, sans-serif" font-size="14" letter-spacing=".5">OPEN SOURCE  ·  NODE.JS 18+  ·  MIT</text>
+  <text x="80" y="572" fill="#527087" font-family="Segoe UI, Arial, sans-serif" font-size="13">Context → Tasks → Evidence → Handoff</text>
+</svg>

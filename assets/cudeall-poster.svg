@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350" role="img" aria-labelledby="title desc">
+  <title id="title">CudeAll — Build together. Keep work moving.</title>
+  <desc id="desc">A portrait launch poster for the local-first shared workflow that connects coding agents through context, tasks, evidence, and handoffs.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2=".9" y2="1"><stop stop-color="#07111d"/><stop offset=".62" stop-color="#0b1827"/><stop offset="1" stop-color="#101d2a"/></linearGradient>
+    <linearGradient id="beam" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#34d399"/><stop offset=".55" stop-color="#5eead4"/><stop offset="1" stop-color="#93c5fd"/></linearGradient>
+    <radialGradient id="glow"><stop stop-color="#34d399" stop-opacity=".22"/><stop offset="1" stop-color="#34d399" stop-opacity="0"/></radialGradient>
+    <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse"><path d="M44 0H0V44" fill="none" stroke="#94a3b8" stroke-opacity=".055"/></pattern>
+  </defs>
+  <rect width="1080" height="1350" rx="34" fill="url(#bg)"/><rect width="1080" height="1350" rx="34" fill="url(#grid)"/>
+  <circle cx="545" cy="805" r="390" fill="url(#glow)"/>
+  <g transform="translate(88 90)"><rect width="150" height="34" rx="17" fill="#10291f" stroke="#2b775b"/><circle cx="18" cy="17" r="4" fill="#5eead4"/><text x="34" y="22" fill="#a7f3d0" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="1.3">LOCAL-FIRST</text></g>
+  <text x="84" y="268" fill="#f1f5f9" font-family="Segoe UI, Arial, sans-serif" font-size="112" font-weight="750" letter-spacing="-5">Cude<tspan fill="#5eead4">All</tspan></text>
+  <text x="92" y="328" fill="#d4e1eb" font-family="Segoe UI, Arial, sans-serif" font-size="29" font-weight="500">Build together. Keep work moving.</text>
+  <text x="92" y="374" fill="#8fa4b8" font-family="Segoe UI, Arial, sans-serif" font-size="20">A shared project spine for coding agents.</text>
+  <g transform="translate(540 720)">
+    <path d="M0 262V92M0 92L-182-33M0 92L182-33M0 92V-125M-182-33L-300-122M-182-33L-92-155M182-33L95-157M182-33L302-122M0-125L-56-210M0-125L78-220" fill="none" stroke="url(#beam)" stroke-opacity=".72" stroke-width="4"/>
+    <g fill="#0c1b29" stroke="#5eead4" stroke-width="3"><circle r="47"/><circle cx="-182" cy="-33" r="34"/><circle cx="182" cy="-33" r="34"/><circle cy="-125" r="34"/><circle cx="-300" cy="-122" r="23"/><circle cx="-92" cy="-155" r="23"/><circle cx="95" cy="-157" r="23"/><circle cx="302" cy="-122" r="23"/><circle cx="-56" cy="-210" r="23"/><circle cx="78" cy="-220" r="23"/></g>
+    <g fill="#a7f3d0" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle"><text y="5">SPINE</text><text x="-182" y="-28">TASKS</text><text x="182" y="-28">PROOF</text><text y="-120">CONTEXT</text></g>
+    <g fill="#bfd0df" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="600"><text x="-372" y="-126">OpenCode</text><text x="-108" y="-190">Codex</text><text x="55" y="-193">Claude</text><text x="310" y="-127">Desktop</text></g>
+  </g>
+  <g transform="translate(92 1050)" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="650">
+    <g><rect width="180" height="48" rx="24" fill="#122436" stroke="#253b4f"/><text x="90" y="31" fill="#d9e7f2" text-anchor="middle">Shared context</text></g>
+    <g transform="translate(198)"><rect width="180" height="48" rx="24" fill="#122436" stroke="#253b4f"/><text x="90" y="31" fill="#d9e7f2" text-anchor="middle">Verifiable work</text></g>
+    <g transform="translate(396)"><rect width="180" height="48" rx="24" fill="#122436" stroke="#253b4f"/><text x="90" y="31" fill="#d9e7f2" text-anchor="middle">Seamless handoffs</text></g>
+  </g>
+  <path d="M92 1165H988" stroke="#203447"/>
+  <text x="92" y="1212" fill="#a7f3d0" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="1">CONTEXT  →  TASKS  →  EVIDENCE  →  HANDOFF</text>
+  <text x="92" y="1270" fill="#6f879c" font-family="Segoe UI, Arial, sans-serif" font-size="15" letter-spacing=".6">OPEN SOURCE  ·  NODE.JS 18+  ·  MIT</text>
+</svg>

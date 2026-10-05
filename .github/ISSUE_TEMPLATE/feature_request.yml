@@ -1,0 +1,25 @@
+name: Feature request
+description: Propose a focused improvement to CudeAll
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: Describe the workflow that is currently difficult or missing.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+      description: Explain the smallest useful change and how it should work.
+    validations:
+      required: true
+  - type: textarea
+    id: tradeoffs
+    attributes:
+      label: Permissions, data, or compatibility impact
+      description: Mention any new access, external service, or host-specific behavior.
+    validations:
+      required: false
